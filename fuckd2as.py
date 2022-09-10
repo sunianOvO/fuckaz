@@ -24,7 +24,7 @@ for location in locations:
              f'{location}-{vm_size}-{count}-{fuck}', '--image', 'UbuntuLTS',
              '--size', f'{vm_size}', '--location', f'{location}', '--admin-username',
              'axuan', '--admin-password', '320Hanyue1827...', '--custom-data',
-             '/root/XX/cloud-init.txt', "--no-wait"])
+             '/.XX/cloud-init.txt', "--no-wait"])
 
 print("\n")
 print("VM Created Successfully")
