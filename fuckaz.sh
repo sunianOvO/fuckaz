@@ -41,7 +41,7 @@ fi
 if [[ $4 ]]
 then
   if [[ $4 == 'rm' ]]
-    then
+  then
       az group delete --name ResourceGroup --no-wait --yes
   elif [[ $4 == 'read' ]]
   then
