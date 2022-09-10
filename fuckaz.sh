@@ -36,6 +36,7 @@ runcmd:
   - ${shell}
   - "> /.XX/cloud-init.txt
   elif [[ $4 == 'null' ]]
+  then
      echo '将以已存在的 cloud-init.txt 为开机脚本，请确认脚本内容是否需要修改？(5秒后自动执行)'
      sleep 5
    fi
