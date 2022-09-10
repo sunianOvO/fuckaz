@@ -44,6 +44,7 @@ then
   if [[ $4 == 'rm' ]]
   then
       az group delete --name ResourceGroup --no-wait --yes
+      exit 0
   elif [[ $4 == 'read' ]]
   then
     echo '请输入自定义开机脚本:'
