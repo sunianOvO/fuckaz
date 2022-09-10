@@ -34,9 +34,11 @@ if [[ $1 == 'update' ]]
 elif [[ $1 == 'check' ]]
   then
   bash <(curl -Ls https://raw.githubusercontent.com/sunianOvO/fuckaz/main/check.sh)
+  exit 0
 elif [[ $1 == 'screen' ]]
   then
   bash <(curl -Ls https://raw.githubusercontent.com/sunianOvO/fuckaz/main/screen.sh)
+  exit 0
 fi
 if [[ $4 ]]
 then
