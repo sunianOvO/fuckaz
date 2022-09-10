@@ -36,7 +36,7 @@ ${PACKAGE_UPDATE[int]}
 
 ${PACKAGE_INSTALL[int]} jq
 
-         curl -sk "">/bin/check
+         curl -sk "https://raw.githubusercontent.com/sunianOvO/fuckaz/main/check.sh">/bin/check
 
          chmod -R 777 /bin/check
 
