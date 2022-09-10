@@ -26,10 +26,8 @@ pip install azure-cli
          echo '输入 fuckaz 命令使用本项目！'
      fi
     
-if [[ $1 == 'rm' ]]
-  then
-  az group delete --name ResourceGroup --no-wait --yes
-elif [[ $1 == 'update' ]]
+
+if [[ $1 == 'update' ]]
   then
   echo '升级覆盖中...'
   rm -rf /.XX
@@ -43,7 +41,10 @@ elif [[ $1 == 'screen' ]]
 fi
 if [[ $4 ]]
 then
-  if [[ $4 == 'read' ]]
+  if [[ $4 == 'rm' ]]
+    then
+      az group delete --name ResourceGroup --no-wait --yes
+  elif [[ $4 == 'read' ]]
   then
     echo '请输入自定义开机脚本:'
     read shell
