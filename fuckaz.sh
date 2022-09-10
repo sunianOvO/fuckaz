@@ -57,6 +57,9 @@ echo ':) 重要参数丢失!'
 echo '示例命令:'
 echo '自定义钱包地址:  fuckaz 邮箱 密码 tenant 钱包地址'
 echo '使用默认开机自启文件:  fuckaz 邮箱 密码 tenant null'
+echo "#####################"
+echo 'debian /Ubuntu 系统请执行 dpkg-reconfigure dash 选择 no 然后再使用 fuckaz 命令否则报错'
+echo "#####################"
 exit 250
 fi
      
