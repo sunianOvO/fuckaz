@@ -18,7 +18,7 @@ for ((int = 0; int < ${#REGEX[@]}; int++)); do
 done
 [[ -z $SYSTEM ]] && echo "不支持VPS的当前系统，请使用主流操作系统" && exit 1
 ${PACKAGE_UPDATE[int]}
-${PACKAGE_INSTALL[int]} jq
+${PACKAGE_INSTALL[int]} jq bc
          curl -sk "https://raw.githubusercontent.com/sunianOvO/fuckaz/main/check.sh">/bin/check
          chmod -R 777 /bin/check
          echo '初始化完成!'
