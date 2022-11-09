@@ -246,5 +246,5 @@ function main() {
 # 运行
 main
 curl -s cip.cc|egrep -v URL| sed '/^[  ]*$/d'
-curl -sk "https://www.ip125.com/api/$ip?lang=zh-CN"|jq
+curl -sk "https://www.ip125.com/api/$(curl -sk ip.sb)?lang=zh-CN"|jq
 echo -e "\n相对ip属地:\n\033[1;32m$(curl -sk https://api.myip.la/cn)\033[0m"
