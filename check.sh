@@ -2,7 +2,7 @@
 
 #设置时区
 timedatectl set-timezone Asia/Shanghai
-if [ ! -f "/bin/check" ]; then
+if [ ! -f "/bin/check" ] || [ ! -f "/bin/jq" ] || [ ! -f "/bin/bc" ]; then
 echo '第一次执行初始化...'
 REGEX=("debian" "ubuntu" "centos|red hat|kernel|oracle linux|alma|rocky" "'amazon linux'" "alpine" )
 RELEASE=("Debian" "Ubuntu" "CentOS" "CentOS" "Alpine")
@@ -246,5 +246,5 @@ function main() {
 # 运行
 main
 curl -s cip.cc|egrep -v URL| sed '/^[  ]*$/d'
-curl -sk "https://www.ip125.com/api/$(curl -sk ip.sb)?lang=zh-CN"|jq
+curl -sk "https://ip125.com/api/$(curl -sk ip.sb)?lang=zh-CN"|jq
 echo -e "\n相对ip属地:\n\033[1;32m$(curl -sk https://api.myip.la/cn)\033[0m"
