@@ -245,6 +245,6 @@ function main() {
 
 # 运行
 main
-curl -s cip.cc|egrep -v URL| sed '/^[  ]*$/d'
-curl -sk "https://ip125.com/api/$(curl -sk ip.sb)?lang=zh-CN"|jq
-echo -e "\n相对ip属地:\n\033[1;32m$(curl -sk https://api.myip.la/cn)\033[0m"
+curl --max-time 5 -s cip.cc|egrep -v URL| sed '/^[  ]*$/d'
+curl --max-time 5 -sk "https://ip125.com/api/$(curl --max-time 5 -sk ip.sb)?lang=zh-CN"|jq
+echo -e "\n相对ip属地:\n\033[1;32m$(curl --max-time 5 -sk https://api.myip.la/cn)\033[0m"
